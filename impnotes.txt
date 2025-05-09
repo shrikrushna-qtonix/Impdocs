@@ -1,0 +1,948 @@
+create recaptha
+
+----------------------
+
+// Add any CSS and JS File Here
+function add_css_and_script() {
+    
+    wp_enqueue_style( 'style-name', get_stylesheet_uri() );
+    wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), _S_VERSION, 'all' );
+    wp_enqueue_style( 'main_css', get_template_directory_uri() . '/css/theme.css', array(), _S_VERSION, 'all' );
+	wp_enqueue_style( 'mainunder_css', get_template_directory_uri() . '/css/additional.css', array(), _S_VERSION, 'all' );
+    wp_enqueue_style( 'bootstrap-icons', get_template_directory_uri() . '/css/bootstrap-icons.css', array(), _S_VERSION, 'all' );
+   
+    // wp_enqueue_style( 'aos', get_template_directory_uri() . '/css/aos.css', array(), '1.0.0', 'all' );
+	wp_enqueue_style( 'woo', get_template_directory_uri() . '/css/woocommerce.css', array(), _S_VERSION, 'all' );
+	if(is_front_page()){
+	    // Enqueue Swiper JS
+    wp_enqueue_script('swiper-js', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array(), null, true);
+	}
+	 if ( is_shop() || is_product_category() || is_product_tag()) {
+		wp_enqueue_style( 'product-cat-css', get_template_directory_uri() . '/css/product-category.css', array(), _S_VERSION, 'all' );
+	 }
+	 if(is_search()){
+	     wp_enqueue_style( 'search-css', get_template_directory_uri() . '/css/search.css', array(), _S_VERSION, 'all' );
+	 }
+	
+	  if (is_product()){
+	      	wp_enqueue_style( 'single-product-css', get_template_directory_uri() . '/css/single-product.css', array(), _S_VERSION, 'all' );
+	  }
+	  if (is_checkout()){
+	      	wp_enqueue_style( 'checkout-css', get_template_directory_uri() . '/css/checkout.css', array(), _S_VERSION, 'all' );
+	  }
+	  if (is_cart()){
+	      	wp_enqueue_style( 'cart-css', get_template_directory_uri() . '/css/cart.css', array(), _S_VERSION, 'all' );
+	  }
+	  
+	  
+	  if (is_account_page()) {
+        wp_enqueue_style( 'my-account-css', get_template_directory_uri() . '/css/my-account.css', array(), _S_VERSION, 'all' );
+        }
+
+if(is_page('refund-request-form')){
+    wp_enqueue_style( 'refund-return-css', get_template_directory_uri() . '/css/refund-return.css', array(), _S_VERSION, 'all' );
+}
+	  
+	  if(is_page('testimonial')){
+	       wp_enqueue_style( 'testimonials-css', get_template_directory_uri() . '/css/testimonials.css', array(), _S_VERSION, 'all' );
+	  }
+	  
+	  
+	   wp_enqueue_style('responsive-css', get_template_directory_uri() . '/css/responsive.css', array(), _S_VERSION, 'all' );
+	   
+    wp_enqueue_script('bootstrapjs', get_template_directory_uri() . '/js/bootstrap.bundle.min.js', array(), _S_VERSION, 'true' );
+    
+     wp_enqueue_script('swiper-js', 'https://unpkg.com/swiper/swiper-bundle.min.js', array('jquery'), null, true);
+    wp_enqueue_style('swiper-css', 'https://unpkg.com/swiper/swiper-bundle.min.css', array(), null);
+    wp_enqueue_script('themejs', get_template_directory_uri() . '/js/theme.js', array(), _S_VERSION, 'true' );
+    
+    
+    wp_localize_script('themejs', 'obj', array(
+		'theme_path' => get_template_directory_uri(),
+		'ajaxurl' => admin_url('admin-ajax.php')
+	));
+	
+// 	wp_enqueue_script('jquery-blockui');
+
+    
+}
+add_action( 'wp_enqueue_scripts', 'add_css_and_script');
+
+
+
+
+-------------------------------------------------
+https://www.google.com/recaptcha/admin/create
+------------------------------------
+Gmail & Skype	"user name: shrikrushna.qtonix@gmail.com
+password: shrikrushna1_qtoniX
+
+rajalaxmi.qtonix@gmail.com 
+
+psw: mailto:ankita1@gmail.com
+mail; mailto:ankita1.qtonix@gmail.com"
+Git	"user name: shrikrushna-qtonix
+Password: shrikrushna1_qtoniX"
+ERP Login	"user name: shri@qtoniX
+password: QB_523"
+Gtmatrix	skqtonix@123
+	https://gtmetrix.com/analyze.html
+common user name pass	"sk-qtonix
+tanjirokomodo
+shrikrushna.qtonix@gmail.com"
+ferramentafalco.com	"cpanel url: https://80.211.144.99:10595/fd556ace
+username: aayxfhey
+password: a2116f23
+
+admin details:
+https://www.ferramentafalco.com/wordpress/wp-login.php?redirect_to=https%3A%2F%2Fwww.ferramentafalco.com%2Fwordpress%2Fwp-admin%2F&reauth=1
+Url         https://www.ferramentafalco.com/wordpress/wp-admin/
+Username:    louis@qtonix.com
+pwd:       Qtonix@2024#
+
+ftp:
+user: testuser
+password: 3nwsaRYfzL3eNFGm
+server: ftp://80.211.144.99:21
+/var/www/sites/www.ferramentafalco.com/wordpress"
+gomulties	"https://mi3-lr10.supercp.com:2087/
+
+gomultis
+
+qtoniX@2024new"
+for country info	"https://ipinfo.io/account/home
+skqtonix@123
+curl ""ipinfo.io/103.92.46.143?token=ef62fd85bf7eb6""
+ef62fd85bf7eb6"
+hubspot	"
+mail: support@pharmaticus.com
+password: J6rQ$!669wWz7HZ"
+Hoistinger	"Hostinger Access:
+mailto:alisha@ipaydna.biz
+iPayDNA2025
+
+
+user: adam@qtonix.com
+password: qtoniX@2023
+https://hpanel.hostinger.com/websites"
+www.adamrepair.dk	"https://www.adamrepair.dk/wp-login.php
+Username: webmaster
+63RMJ71xsG^6HQC7"
+-------------------------------------------------------------------
+robots.txt
+User-agent: *
+Disallow:
+Allow:/
+
+Sitemap: https://gabapentineffects.com/sitemap_index.xml
+
+
+-----------------------------
+fluent form
+Name
+{inputs.names.first_name}
+-----------------------------------
+
+Last Name
+{inputs.input_text}
+-----------------------------------
+
+Email Address
+{inputs.email}
+-----------------------------------
+
+Contact Number
+{inputs.contactnumber}
+-----------------------------------
+
+Subject
+{inputs.dropdown}
+-----------------------------------
+
+Message
+{inputs.description}
+-----------------------------------
+
+This form was submitted at:
+{embed_post.permalink}
+
+----------------------------------------------
+
+if(isset($_GET['sk']) && $_GET['sk']=="sk"){
+}
+------------------------------
+
+function add_webp_svg_to_upload_mimes($existing_mimes) {
+$existing_mimes['webp'] = 'image/webp';
+$existing_mimes['svg'] = 'image/svg+xml';
+return $existing_mimes;
+}
+add_filter('mime_types', 'add_webp_svg_to_upload_mimes');
+function add_webp_svg_to_allowed_image_types($mime_types) {
+$mime_types['webp'] = 'image/webp';
+$mime_types['svg'] = 'image/svg+xml';
+return $mime_types;
+}
+add_filter('wp_allowed_mime_types', 'add_webp_svg_to_allowed_image_types');
+------------------------------------------------------------
+add featured image 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    function moveImage() {
+        var featuredImage = document.getElementById("featured-image");
+        var postContent = document.getElementById("post-content");
+
+        if (window.innerWidth <= 768) {
+            if (!document.getElementById("moved-image")) {
+                var clonedImage = featuredImage.cloneNode(true);
+                clonedImage.id = "moved-image";
+                postContent.insertBefore(clonedImage, postContent.children[4]); // Insert after the second paragraph
+                featuredImage.style.display = "none";
+            }
+        } else {
+            var movedImage = document.getElementById("moved-image");
+            if (movedImage) {
+                movedImage.remove();
+                featuredImage.style.display = "block";
+            }
+        }
+    }
+
+    moveImage();
+    window.addEventListener("resize", moveImage);
+});
+</script>
+-------------------------------------------------------------
+center position
+left: 50%;
+    transform: translateX(-50%);
+----------------------------------------
+if ( is_wc_endpoint_url('order-received') ) {
+    // do something
+}
+----------------------------------------
+SMTP 
+	
+	app password: pswr vuuh nfal rrlt
+smtp.gmail.com
+587  TLS 
+465  SSL
+SMTP Encryption: Select TLS
+From Email: Enter your Gmail address (e.g., shrikrushna.qtonix@gmail.com).
+SMTP Username: Enter your Gmail address (e.g., shrikrushna.qtonix@gmail.com).
+SMTP Password: Paste the 16-character app password you generated earlie
+--------------------------------------------------------------------------------	
+
+// Custom home banner slider 
+function custom_slider_shortcode() {
+    ob_start(); ?>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css">
+    <link href="<?php echo get_template_directory_uri(); ?>/css/slider.css" rel="stylesheet" />
+
+    <?php 
+    $sliders = get_field('slider_content', 'option'); // Fetch repeater field from options page
+    if ($sliders): 
+    ?>
+    
+    <!-- Preload all images -->
+    <div style="display: none;">
+        <?php foreach ($sliders as $slide): ?>
+            <img src="<?php echo esc_url($slide['slider_image']); ?>" class="preload-image" />
+        <?php endforeach; ?>
+    </div>
+
+    <div class="ct-header ct-header--slider ct-slick-custom-dots" id="home">
+        <div class="ct-slick-homepage" data-arrows="true" data-autoplay="true" style="visibility: hidden;">
+            <?php foreach ($sliders as $slide): ?>
+                <div class="ct-header tablex item background-image-cls" data-background="<?php echo esc_url($slide['slider_image']); ?>">
+                    <div class="ct-u-display-tablex">
+                        <div class="inner">
+                            <div class="container">
+                                <div class="row left-container-cls">
+                                    <div class="col-md-12 col-lg-12 slider-inner">
+                                        <?php if (!empty($slide['title_text'])): ?>
+                                            <h1 class="big"><?php echo esc_html($slide['title_text']); ?></h1>
+                                        <?php endif; ?>
+                                        <?php if (!empty($slide['subtitle_text'])): ?>
+                                            <p><?php echo esc_html($slide['subtitle_text']); ?></p>
+                                        <?php endif; ?>
+                                        <div class="buttons-cls">
+                                            <a class="btn btn-transparent btn-lg text-uppercase view-collection-cls" href="https://appwithoutcodes.com/aquaskinz/shop/">View Collections</a>
+                                            <a class="btn btn-transparent btn-lg text-uppercase learn-more-cls" href="https://appwithoutcodes.com/aquaskinz/about-us/">Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/slider-bg.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let images = document.querySelectorAll(".preload-image");
+            let totalImages = images.length;
+            let loadedCount = 0;
+
+            images.forEach(img => {
+                img.onload = function() {
+                    loadedCount++;
+                    if (loadedCount === totalImages) {
+                        initializeSlider();
+                    }
+                };
+                img.src = img.src; // Trigger image load
+            });
+
+            function initializeSlider() {
+                document.querySelector('.ct-slick-homepage').style.visibility = 'visible';
+                jQuery('.ct-slick-homepage').slick({
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    arrows: true,
+                    dots: false,
+                    speed: 1000,
+                    cssEase: 'ease-in-out',
+                    infinite: true
+                });
+            }
+        });
+    </script>
+
+    <?php 
+    endif; 
+    return ob_get_clean();
+}
+add_shortcode('custom_slider', 'custom_slider_shortcode');
+--------------------------------------------------------------------------------
+ line-height: 18px;
+ overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    display: -moz-box;
+	-----------------------------------------
+	
+	Yahoo blocks SMTP connections using your regular password. You must generate an App Password:
+
+Log in to your Yahoo Account at https://login.yahoo.com/.
+
+Click on your profile picture (top right) and select "Account Info".
+
+Go to the "Account Security" tab.
+
+Scroll down and find "App passwords".
+
+Click "Generate app password".
+
+Select "Other", type a name (e.g., "WordPress SMTP"), and click Generate.
+
+Copy the generated password and use it in Post SMTP instead of your Yahoo password.
+--------------------------------------------------------------
+<?php
+if ( function_exists('yoast_wpseo_get_value') ) {
+    $meta_description = yoast_wpseo_get_value('metadesc');
+} else {
+    $meta_description = get_the_excerpt(); // Fallback to excerpt if Yoast is not available
+}
+?>
+<meta name="description" content="<?php echo esc_attr($meta_description); ?>">
+---------------------------------------------------------------------------
+
+nimoseti@gmail.com
+
+
+
+
+bangashmubashir@yahoo.com
+
+
+
+
+
+iqrar@luxridemelbourne.com.au
+
+
+40
+
+
+https://luxridemelbourne.com.au/
+https://alldaypromoinc.com/
+
+
+
+Good evening, Sir,
+Today, I worked on the "https://alldaypromoinc.com/" site (email send test) and "https://luxridemelbourne.com.au/" site (email send related) also in "https://appwithoutcodes.com/iccdiplomas" site (design changes).
+
+Infoluxridemelbourne@123
+
+shrikrushna.qtonix@gmail.com
+
+
+bangashmubashir@yahoo.com
+
+
+
+
+https://appwithoutcodes.com/iccdiplomas/policies/
+
+REVIEW section
+
+
+Good evening, Sir,
+Today, I worked on the "https://appwithoutcodes.com/aquaskinz/" site (check all pages design with responsive).
+
+
+
+
+<?php
+if ( function_exists('yoast_wpseo_get_value') ) {
+    $meta_description = yoast_wpseo_get_value('metadesc');
+} else {
+    $meta_description = get_the_excerpt(); // Fallback to excerpt if Yoast is not available
+}
+?>
+<meta name="description" content="<?php echo esc_attr($meta_description); ?>">
+
+
+
+
+
+.widget_media_image .wp-block-image img{
+	width:100% !important;
+}
+@media screen and (max-width: 767px) {
+	.widget_media_image .wp-block-image img{
+	width:300px !important;
+}
+
+
+@media screen and (max-width: 420px) {
+	.widget_media_image .wp-block-image img{
+	width:100% !important;
+}
+	
+}
+
+
+https://www.kurier-sachsen.de/wp-admin/
+username: kurieradmin
+password: kurier@2021#
+
+	
+Eric Jones
+Einreichung-ID:
+#212
+User IP:
+102.129.223.92
+Quell-URL:
+https://www.kurier-sachsen.de/
+Browser:
+Chrome
+Device:
+Windows
+User:
+Guest
+Status:
+Gelesen
+Submitted On:
+2025-04-03 22:18:33
+
+
+	
+"""https://www.kurier-sachsen.de/wp-admin
+username: kurieradmin
+Password: kurier@2021#
+
+capanel
+------------
+https://login.topclick.net:8443
+Benutzer: ADAM
+Passw: 3_Gn%F5K_jXpwJ?
+
+ftp
+-----
+5.9.34.35
+Benutzer: adam
+Passw: G2Pmc*1R3ocNsprk"""
+
+
+/httpdocs/wp/wp-content/themes/zidane
+
+--------------------------------------
+function custom_comment_form_shortcode() {
+    ob_start();
+
+    // Handle form submission
+    if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['custom_comment'])) {
+        $comment_content = sanitize_text_field($_POST['custom_comment']);
+        $comment_data = array(
+            'comment_post_ID' => get_the_ID(), // Attach to current page
+            'comment_content' => $comment_content,
+            'comment_author' => 'Anonymous',
+            'comment_approved' => 1,
+        );
+        wp_insert_comment($comment_data);
+    }
+
+    // Fetch comments for this page
+    $comments = get_comments(array(
+        'post_id' => get_the_ID(),
+        'status' => 'approve',
+    ));
+
+    // Display comments
+    echo '<div class="custom-comments">';
+    if (!empty($comments)) {
+        echo '<h3 class="comments-title">Comments</h3><ul>';
+        foreach ($comments as $comment) {
+            echo '<li><div class="comment-box">';
+            echo '<p class="comment-text">' . esc_html($comment->comment_content) . '</p>';
+            echo '<span class="comment-date">' . esc_html(get_comment_date('', $comment)) . '</span>';
+            echo '</div></li>';
+        }
+        echo '</ul>';
+    } else {
+        echo '<p class="no-comments">No comments yet. Be the first to comment!</p>';
+    }
+    echo '</div>';
+
+    // Display form
+    ?>
+    <form method="post" class="custom-comment-form">
+        <h2 class="form-heading">Leave a Comment</h2>
+        <textarea name="custom_comment" placeholder="Write your comment here..." required></textarea>
+        <button type="submit">Submit Comment</button>
+    </form>
+
+    <style>
+        .custom-comments { margin-bottom: 30px; }
+        .custom-comments ul { list-style: none; padding: 0; }
+        .custom-comments li { margin-bottom: 15px; }
+        .comments-title {
+            color: #005f8d;
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        .comment-box {
+            background: #f7f7f7;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .comment-text {
+            color: #5E5E5E;
+            font-size: 15px;
+        }
+        .comment-date {
+            display: block;
+            font-size: 12px;
+            color: #999;
+            margin-top: 5px;
+        }
+        .custom-comment-form {
+            margin-top: 20px;
+        }
+        .custom-comment-form .form-heading {
+            color: #101828;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .custom-comment-form textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            min-height: 100px;
+            color: #5E5E5E;
+        }
+        .custom-comment-form button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #E5B22E;
+            color: #000000;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .custom-comment-form button:hover {
+            background-color: #d4a019;
+        }
+        .no-comments {
+            color: #5E5E5E;
+        }
+    </style>
+    <?php
+
+    return ob_get_clean();
+}
+add_shortcode('custom_comment_box', 'custom_comment_form_shortcode');
+-----------------------------------------------------------------------
+
+
+
+function block_multiple_ips() {
+
+    $blocked_ips = ['102.129.223.92', '198.51.100.23']; // Add more IPs as needed
+    $user_ip = $_SERVER['REMOTE_ADDR'];
+
+    if (in_array($user_ip, $blocked_ips)) {
+        wp_die('Access denied.');
+    }
+}
+add_action('init', 'block_multiple_ips');
+
+---------------------------------------------------------------------------
+
+function add_webp_svg_to_upload_mimes($existing_mimes) {
+$existing_mimes['webp'] = 'image/webp';
+$existing_mimes['svg'] = 'image/svg+xml';
+return $existing_mimes;
+}
+add_filter('mime_types', 'add_webp_svg_to_upload_mimes');
+function add_webp_svg_to_allowed_image_types($mime_types) {
+$mime_types['webp'] = 'image/webp';
+$mime_types['svg'] = 'image/svg+xml';
+return $mime_types;
+}
+add_filter('wp_allowed_mime_types', 'add_webp_svg_to_allowed_image_types');
+----------------------------------------------------
+
+
+Good evening, Sir,
+Today, I worked on the "https://www.kurier-sachsen.de/" site (block specific user ip and check suspicious content) and "https://appwithoutcodes.com/aquaskinz/" site (update image).
+
+
+
+----------------------------
+[wpseo_breadcrumb]
+--------------------------
+box shadow
+box-shadow: 0px 22px 48px 0px #0000001A;
+background:
+background: linear-gradient(180deg, #6EEAC6 0%, rgba(0, 175, 135, 0.15) 100%);
+-----------------------------------------------------
+…or create a new repository on the command line
+echo "# plugins" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/shrikrushna-qtonix/plugins.git
+git push -u origin main
+
+------------------------------------------------------
+…or push an existing repository from the command line
+git remote add origin https://github.com/shrikrushna-qtonix/plugins.git
+git branch -M main
+git push -u origin main
+--------------------------------
+
+
+Plus Jakarta Sans
+dark blue: #010528
+
+faded green: #6EEAC6
+green: #00AF8726
+
+
+blue: #1a9fda
+background: #00000066;
+
+
+		
+Good evening, Sir,
+Today, I worked on the "http://luxridemelbourne.com.au/"(mail not sent error fixed) and "https://appwithoutcodes.com/tourinthecity/" site (single page design and home page design changes).
+
+
+
+
+	
+	
+	white 90 units 169
+	white 120 units 209
+	white 180 units 239
+	
+	blue 90 169 
+	209
+	239
+	
+	
+	
+	gabapentin
+	
+	100 180           ($149)
+
+	300  180          ($159)
+	400               ($169)
+	600               ($179)
+	800               ($189)
+	800  120          ($165)
+	
+	caledonhvacservices@gmail.com
+	
+	
+	
+	<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Get the current page URL
+    let currentUrl = window.location.href;
+
+    // Select all links inside the dropdown
+    let links = document.querySelectorAll("#myDropdown a");
+
+    // Loop through the links to find a match
+    links.forEach(link => {
+        if (link.href === currentUrl) {
+            // Set the button text to the matching link's text
+            document.getElementById("onbtn").textContent = link.textContent;
+        }
+    });
+});
+</script>
+
+
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+let reload = document.querySelector("#onbtn");
+        window.addEventListener("DOMContentLoaded", (event) =>{
+            console.log(1234);
+            
+            if(reload){
+                   reload.innerText=window.location.href.split('/')[4].replace('-',' ')
+            }
+    
+        });
+		
+		
+		
+caledonhvacservices@gmail.com
+
+
+
+
+
+
+
+
+https://caledonhvac.com/
+
+
+.tourmaster-tour-thumbnail img.tourmaster-slider-image{
+height:200px;
+}
+
+define('WP_MEMORY_LIMIT', '512M');
+
+
+.tourmaster-flexslider ul.slides{
+margin: 0px auto !important;
+    padding-left: 0px !important;
+	}
+	
+.tourmaster-flexslider ul.slides .tourmaster-item-mglr{
+	margin-right: 0px;
+	}
+	
+	
+	
+	.tourmaster-tour-content-wrap h3{
+	
+	font-family: "Plus Jakarta Sans";
+    color: #010528;
+    font-size: 15px;
+    margin: 10px 0 20px 0;
+    font-weight: 600;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    display: -moz-box;
+}
+.tourmaster-tour-content{
+text-align: left;
+    font-family: "Plus Jakarta Sans", Sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #010528;
+	}
+	.tourmaster-tour-content
+	
+	border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+	
+	
+	
+	
+	border-color: 
+	;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0px 22px 48px 0px rgba(0, 0, 0, 0.10196078431372549);
+}
+
+
+.mobile-tour-list-cls .tourmaster-tour-shortcode .tourmaster-tour-item{
+padding-top:0px;
+}
+
+    filter: invert(1);
+	
+	filter-btn.active::after{
+	
+	
+	
+	.filter-bar-wrapper .filter-btn.active {
+    background: #61D5B4;
+    color: #FFF;
+    border-color: #61D5B4;
+    appearance: none; /* Remove default arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="10" viewBox="0 0 20 20" width="10" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    padding-right: 30px; /* Ensure space for the icon */
+}
+
+background: #61D5B4;
+
+
+length
+package
+group-size
+
+
+box-shadow: 0px 3px 18.5px 0px #00000036;
+
+
+background: linear-gradient(180deg, #6EEAC6 0%, rgba(0, 175, 135, 0.36) 100%);
+
+
+background: linear-gradient(180deg, #6EEAC6 0%, rgba(0, 175, 135, 0.36) 100%);
+
+
+#2fd59a
+
+#59c4a7
+
+
+https://caledonhvac.com/
+
+
+
+
+Good evening, Sir,
+Today, I worked on the "https://caledonhvac.com/" site (solve the edit with elementor not open issue) and "https://appwithoutcodes.com/tourinthecity/de/about-us/" site (remove some category and about page design).
+
+
+https://appwithoutcodes.com/tourinthecity/de/about-us/
+
+.footer #text-3 .textwidget .tel-box{
+    margin-bottom: 0px;
+	}
+	
+	
+	.wpb_row .british-virgin-sec-cls{
+	
+	padding:0px;
+	}
+	
+	
+.memorandum_1 ul li::before {
+    content: "\2022";
+    font-size: 1.8em;
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    vertical-align: top;
+    line-height: 0.95em;
+}   
+
+
+.page-id-179 .awsm-settings .row h3 span::before{
+ content: "\2022";
+    font-size: 1.8em;
+    color: red;  	
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    vertical-align: top;
+    line-height: 0.95em;
+}
+
+.page-id-179 .awsm-settings .row h3 img{
+display:none;
+}
+
+
+.commentform .comment-form .form-submit .submit{
+background-color: #7abb3b;
+    border-color: #6da835;
+}
+
+.commentform h4.heading span {
+	color:#979797;
+	}
+
+#979797
+#FF0000
+
+
+.wysija-input 4385
+
+border-radius: 4px 0px 0px 4px;
+
+border: none;
+.widget_wysija_cont .wysija-submit{
+    display: block;
+    margin-top: -5px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    font-size: 12px;
+	border-radius: 0px 4px 4px 0px;
+	}
+	
+	
+	
+	font-family: 'Raleway', sans-serif;
+	font-size:15px;
+	
+	.footer .widget-inner div{
+	font-family: 'Raleway', sans-serif;
+	font-size:15px;
+	}
+	
+	.start-taking-cls
